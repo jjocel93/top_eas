@@ -31,5 +31,12 @@ button.classList.add('button');
 container.insertAdjacentElement('afterbegin', button);
 
 button.addEventListener('click', () => {
-  prompt('Select a new grid size');
+  const ans = prompt('Enter the amount of squares per side you want (max 100)');
+  console.log(ans);
+});
+
+button.addEventListener('click', () => {
+  while (squarecontain.hasChildNodes()) {
+    squarecontain.removeChild(squarecontain.firstChild);
+  }
 });
