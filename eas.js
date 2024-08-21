@@ -29,3 +29,7 @@ const button = document.createElement('button');
 button.textContent = 'Click me!';
 button.classList.add('button');
 container.insertAdjacentElement('afterbegin', button);
+
+button.addEventListener('click', () => {
+  prompt('Select a new grid size');
+});
