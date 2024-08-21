@@ -1,10 +1,14 @@
 //select the #container div
 const container = document.querySelector('#container');
 
+const squarecontain = document.createElement('div');
+squarecontain.classList.add('squarecontain');
+container.appendChild(squarecontain);
+
 for (let i = 1; i <= 16; i++) {
   const div = document.createElement('div');
   div.classList.add('squares');
-  container.appendChild(div);
+  squarecontain.appendChild(div);
 }
 
 const hover = document.querySelectorAll('.squares');
@@ -20,3 +24,8 @@ for (let i = 0; i < hover.length; i++) {
     hover[i].style.backgroundColor = '';
   });
 }
+
+const button = document.createElement('button');
+button.textContent = 'Click me!';
+button.classList.add('button');
+container.insertAdjacentElement('afterbegin', button);
