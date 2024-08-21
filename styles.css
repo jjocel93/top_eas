@@ -1,0 +1,17 @@
+/* style sheet for etch a sketch */
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.squares {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  flex-basis: 20%;
+}
