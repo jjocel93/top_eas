@@ -5,7 +5,7 @@ const squarecontain = document.createElement('div');
 squarecontain.classList.add('squarecontain');
 container.appendChild(squarecontain);
 
-for (let i = 1; i <= 16; i++) {
+for (let i = 1; i <= 4; i++) {
   const div = document.createElement('div');
   div.classList.add('squares');
   squarecontain.appendChild(div);

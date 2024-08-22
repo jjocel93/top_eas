@@ -1,27 +1,24 @@
 /* style sheet for etch a sketch */
 
 #container {
+  max-height: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
+/* column  */
 .squares {
-  width: 100px;
-  height: 100px;
   border-style: solid;
-  border-color: black;
-  border-width: 1px;
-  flex-basis: 20%;
+  border-width: 2px;
+  padding: 1rem;
+  flex: 1;
 }
 
+/* row */
 .squarecontain {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .button {
@@ -29,6 +26,8 @@
   height: 80px;
   margin-bottom: 30px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .newsquares {
