@@ -30,13 +30,23 @@ button.textContent = 'Click me!';
 button.classList.add('button');
 container.insertAdjacentElement('afterbegin', button);
 
-button.addEventListener('click', () => {
-  const ans = prompt('Enter the amount of squares per side you want (max 100)');
-  console.log(ans);
-});
+// button.addEventListener('click', () => {
+//   const ans = prompt('Enter the amount of squares per side you want (max 100)');
+//   const nSquares = parseInt(ans);
+// });
 
 button.addEventListener('click', () => {
   while (squarecontain.hasChildNodes()) {
     squarecontain.removeChild(squarecontain.firstChild);
+  }
+});
+
+button.addEventListener('click', () => {
+  const ans = prompt('Enter the amount of squares per side you want (max 100)');
+  const nSquares = parseInt(ans);
+  for (let i = 1; i <= nSquares; i++) {
+    const nSquares = document.createElement('div');
+    nSquares.classList.add('newsquares');
+    squarecontain.appendChild(nSquares);
   }
 });
